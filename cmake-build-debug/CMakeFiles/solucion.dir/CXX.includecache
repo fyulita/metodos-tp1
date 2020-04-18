@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/definiciones.h
+vector
+-
+
+D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/funciones-principales.cpp
+definiciones.h
+D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/definiciones.h
+funciones-secundarias.h
+D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/funciones-secundarias.h
+
+D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/funciones-secundarias.h
+definiciones.h
+D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/definiciones.h
+

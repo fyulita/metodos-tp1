@@ -12,13 +12,21 @@ bool isMatrix(const vector<vector<double>> &M){
     return ans;
 }
 
-bool equalVectors(const vector<double> &v, const vector<double> &w){
+bool equalWithError(const double &a, const double &b, const double &e){
+    bool ans = true;
+    if (a + e < b - e || b + e < a - e){
+        ans = false;
+    }
+    return ans;
+}
+
+bool equalVectors(const vector<double> &v, const vector<double> &w, const double &e){
     bool ans = true;
     if (v.size() != w.size()){
         ans = false;
     } else{
         for (int i = 0; i < v.size(); i++){
-            if (v[i] != w[i]){
+            if (not equalWithError(v[i], w[i], e)){
                 ans = false;
             }
         }
@@ -26,16 +34,14 @@ bool equalVectors(const vector<double> &v, const vector<double> &w){
     return ans;
 }
 
-bool equalMatrices(const matrix &A, const matrix &B){
+bool equalMatrices(const matrix &A, const matrix &B, const double &e){
     bool ans = true;
     if (A.size() != B.size() || A[0].size() != B[0].size()){
         ans = false;
     } else {
         for (int i = 0; i < A.size(); i++){
-            for (int j = 0; j < A[0].size(); j++){
-                if (A[i][j] != B[i][j]){
-                    ans = false;
-                }
+            if (not equalVectors(A[i], B[i], e)){
+                ans = false;
             }
         }
     }
@@ -90,4 +96,65 @@ vector<double> getColumn(const matrix &M, const int &i) {
         ans.push_back(M[j][i]);
     }
     return ans;
+}
+
+bool zeroVector(const vector<double> &v){
+    bool ans = true;
+    for (int i = 0; i < v.size(); i++){
+        if (v[i] != 0){
+            ans = false;
+        }
+    }
+    return ans;
+}
+
+bool hasNoSolution(const matrix &M){
+    bool ans = true;
+    for (int i = 0; i < M.size(); i++){
+        if (not zeroVector(M[i])){
+            ans = false;
+        }
+    }
+    return ans;
+}
+
+bool hasManySolutions(const matrix &M){
+    bool ans = M.size() < M[0].size();
+    return ans;
+}
+
+bool hasSingleSolution(const matrix &M){
+    bool ans = (not hasNoSolution(M)) && (not hasManySolutions(M));
+    return ans;
+}
+
+double firstNonZero(const vector<double> &v){
+    double ans = 0;
+    int i = 0;
+    while (i < v.size() && ans == 0){
+        if (v[i] != 0){
+            ans = v[i];
+        }
+        i++;
+    }
+    return ans;
+}
+
+void normalizeVector(vector<double> &v){
+    double f = (double)1 / firstNonZero(v);
+    for (int i = 0; i < v.size(); i++){
+        v[i] = f * v[i];
+    }
+}
+
+void normalizeMatrix(matrix &M){
+    for (int i = 0; i < M.size(); i++){
+        normalizeVector(M[i]);
+    }
+}
+
+void appendColumn(matrix &M, const vector<double> c){
+    for (int i = 0; i < M.size(); i++){
+        M[i].push_back(c[i]);
+    }
 }

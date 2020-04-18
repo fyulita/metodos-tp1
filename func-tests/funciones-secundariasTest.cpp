@@ -5,13 +5,15 @@
 
 TEST(equalVectorsTest, equalVectors){
     vector<double> v = {1, 2, 3};
-    EXPECT_TRUE(equalVectors(v, v));
+    double e = 1e-9;
+    EXPECT_TRUE(equalVectors(v, v, e));
 }
 
 TEST(equalVectorsTest, diffVectors){
     vector<double> v = {1, 2, 3};
     vector<double> w = {1, 3, 3};
-    EXPECT_FALSE(equalVectors(v, w));
+    double e = 1e-9;
+    EXPECT_FALSE(equalVectors(v, w, e));
 }
 
 // equalMatrices
@@ -20,7 +22,8 @@ TEST(equalMatricesTest, equalMatrices){
     matrix A = {{1, 2, 3},
                 {4, 5, 6},
                 {7, 8, 9}};
-    EXPECT_TRUE(equalMatrices(A, A));
+    double e = 1e-9;
+    EXPECT_TRUE(equalMatrices(A, A, e));
 }
 
 TEST(equalMatricesTest, diffMatrices){
@@ -30,7 +33,8 @@ TEST(equalMatricesTest, diffMatrices){
     matrix B = {{1, 2, 3},
                 {4, 6, 6},
                 {7, 8, 9}};
-    EXPECT_FALSE(equalMatrices(A, B));
+    double e = 1e-9;
+    EXPECT_FALSE(equalMatrices(A, B, e));
 }
 
 // swapRows
@@ -85,7 +89,8 @@ TEST(findMaxPositionTest, withoutNeg){
 TEST(getVectorSliceTest, all){
     vector<double> v = {3, 3, -50, 3, 3};
     vector<double> ans = getVectorSlice(v, 0, v.size());
-    bool equal = equalVectors(v, ans);
+    double e = 1e-9;
+    bool equal = equalVectors(v, ans, e);
     EXPECT_TRUE(equal);
 }
 
@@ -93,7 +98,8 @@ TEST(getVectorSliceTest, frombeginning){
     vector<double> v = {3, 3, -50, 3, 3};
     vector<double> ans = getVectorSlice(v, 0, 3);
     vector<double> expected = {3, 3, -50};
-    bool equal = equalVectors(expected, ans);
+    double e = 1e-9;
+    bool equal = equalVectors(expected, ans, e);
     EXPECT_TRUE(equal);
 }
 
@@ -102,7 +108,8 @@ TEST(getVectorSliceTest, frombeginning){
 TEST(vectorAbsTest, allPositive){
     vector<double> v = {3, 3, 50, 3, 3};
     vector<double> ans = vectorAbs(v);
-    bool equal = equalVectors(v, ans);
+    double e = 1e-9;
+    bool equal = equalVectors(v, ans, e);
     EXPECT_TRUE(equal);
 }
 
@@ -110,7 +117,8 @@ TEST(vectorAbsTest, mixed){
     vector<double> v = {3, -3, 0, 8, -15.2};
     vector<double> ans = vectorAbs(v);
     vector<double> expected = {3, 3, 0, 8, 15.2};
-    bool equal = equalVectors(expected, ans);
+    double e = 1e-9;
+    bool equal = equalVectors(expected, ans, e);
     EXPECT_TRUE(equal);
 }
 
@@ -121,7 +129,8 @@ TEST(getColumnTest, identity2_1) {
                 {0, 1}};
     vector<double> ans = getColumn(M, 0);
     vector<double> expected = {1, 0};
-    bool equal = equalVectors(expected, ans);
+    double e = 1e-9;
+    bool equal = equalVectors(expected, ans, e);
     EXPECT_TRUE(equal);
 }
 
@@ -130,6 +139,7 @@ TEST(getColumnTest, identity2_2) {
                 {0, 1}};
     vector<double> ans = getColumn(M, 1);
     vector<double> expected = {0, 1};
-    bool equal = equalVectors(expected, ans);
+    double e = 1e-9;
+    bool equal = equalVectors(expected, ans, e);
     EXPECT_TRUE(equal);
 }

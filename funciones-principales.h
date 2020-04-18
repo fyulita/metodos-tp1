@@ -4,10 +4,7 @@
 #include "definiciones.h"
 
 void gauss(vector<vector<double>> &M);
-
-void triangular_matrix(matrix A, vector<double> b,matrix Aaux, vector<double> baux);
-vector<double> gausss(matrix A, vector<double> b);
-
-
+void gaussJordan(matrix &M);
+vector<double> findSingleSolution(matrix &M, const vector<double> &b);
 
 #endif //SOLUCION_FUNCIONES_PRINCIPALES_H

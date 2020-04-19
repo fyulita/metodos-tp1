@@ -44,3 +44,44 @@ vector<double> findSingleSolution(matrix &M, const vector<double> &b){
     vector<double> ans = getColumn(M, M[0].size() - 1);
     return ans;
 }
+
+
+//matches representa a una matriz de 2 columnas por la cantidad de partidos en filas
+//en la primer columna estan los ganadores de dichos partidos y en la otra los perdedores
+
+vector<double> cmm (int teams, vector<vector<int> >& matches) {
+
+    matrix C;
+    for (int i = 0; i < teams; i++) {
+        C.push_back(vector<double>(teams, 0));
+        C[i][i] = 2;
+    }
+
+
+    vector<double> wins(teams, 0);
+    vector<double> looses(teams, 0);
+
+
+    for (int i = 0; i < matches.size(); i++) {
+        wins[matches[i][0]-1] += 1;
+        looses[matches[i][1]-1] += 1;
+
+
+
+        C[matches[i][0]-1][matches[i][1]-1] -= 1;
+        C[matches[i][1]-1][matches[i][0]-1] -= 1;
+
+        C[matches[i][0]-1][matches[i][0]-1] += 1;
+        C[matches[i][1]-1][matches[i][1]-1] += 1;
+
+
+    }
+
+    vector<double> b(teams, 0);
+    for(int i = 0; i < teams; i++) {
+        b[i] = 1 + (wins[i] - looses[i]) / 2;
+    }
+
+    return findSingleSolution(C,b);
+}
+

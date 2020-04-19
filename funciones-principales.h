@@ -6,5 +6,7 @@
 void gauss(vector<vector<double>> &M);
 void gaussJordan(matrix &M);
 vector<double> findSingleSolution(matrix &M, const vector<double> &b);
+vector<double> cmm (int teams,vector<vector<int> >& matches);
+
 
 #endif //SOLUCION_FUNCIONES_PRINCIPALES_H

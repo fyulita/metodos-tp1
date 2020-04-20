@@ -1,5 +1,7 @@
+#include <fstream>
 #include "definiciones.h"
 #include "funciones-secundarias.h"
+using namespace std;
 
 void gauss(matrix &M){
     int pivotRow = 0;
@@ -49,7 +51,7 @@ vector<double> findSingleSolution(matrix &M, const vector<double> &b){
 //matches representa a una matriz de 2 columnas por la cantidad de partidos en filas
 //en la primer columna estan los ganadores de dichos partidos y en la otra los perdedores
 
-vector<double> cmm (int teams, vector<vector<int> >& matches) {
+vector<double> cmm (int teams, int matches,ifstream& inputFile) {
 
     matrix C;
     for (int i = 0; i < teams; i++) {
@@ -62,20 +64,25 @@ vector<double> cmm (int teams, vector<vector<int> >& matches) {
     vector<double> looses(teams, 0);
 
 
-    for (int i = 0; i < matches.size(); i++) {
-        wins[matches[i][0]-1] += 1;
-        looses[matches[i][1]-1] += 1;
+    for (int i = 0; i < matches; i++) {
+        int date,team1,score,team2,score2;
+        inputFile>>date>>team1>>score>>team2>>score2;
 
+        if (score>score2) {
+            wins[team1 - 1] += 1;
+            looses[team2 - 1] += 1;
+        }else{
+            wins[team2 - 1] += 1;
+            looses[team1 - 1] += 1;
+        }
 
+        C[team1 - 1][team2 - 1] -= 1;
+        C[team2 - 1][team1 - 1] -= 1;
 
-        C[matches[i][0]-1][matches[i][1]-1] -= 1;
-        C[matches[i][1]-1][matches[i][0]-1] -= 1;
-
-        C[matches[i][0]-1][matches[i][0]-1] += 1;
-        C[matches[i][1]-1][matches[i][1]-1] += 1;
-
-
+        C[team1 - 1][team1 - 1] += 1;
+        C[team2 - 1][team2 - 1] += 1;
     }
+    inputFile.close();
 
     vector<double> b(teams, 0);
     for(int i = 0; i < teams; i++) {

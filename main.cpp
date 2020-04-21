@@ -22,12 +22,14 @@ int main(int argc, char **argv) {
     int matches;
 
     fileInput>>teams>>matches;
+    vector<double> res;
+
 
     if(method==0){
         cmm(teams,matches,fileInput);
+    }else if(method==1){
+        res = wp(teams,matches,fileInput);
     }
 
-   // testing::InitGoogleTest(&argc, argv);
-   // return RUN_ALL_TESTS();
    return 0;
 }

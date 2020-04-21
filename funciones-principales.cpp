@@ -1,5 +1,6 @@
 #include <fstream>
 #include "definiciones.h"
+#include "funciones-principales.h"
 #include "funciones-secundarias.h"
 using namespace std;
 
@@ -48,9 +49,6 @@ vector<double> findSingleSolution(matrix &M, const vector<double> &b){
 }
 
 
-//matches representa a una matriz de 2 columnas por la cantidad de partidos en filas
-//en la primer columna estan los ganadores de dichos partidos y en la otra los perdedores
-
 vector<double> cmm (int teams, int matches,ifstream& inputFile) {
 
     matrix C;
@@ -92,3 +90,27 @@ vector<double> cmm (int teams, int matches,ifstream& inputFile) {
     return findSingleSolution(C,b);
 }
 
+
+vector<double> wp(int teams, int matches,ifstream& inputFile){
+    vector<double> matches_played(teams,0);
+    vector<double> wins(teams,0);
+
+    for(int i = 0; i<matches;i++){
+        int date,team1,score,team2,score2;
+        inputFile>>date>>team1>>score>>team2>>score2;
+        if(score>score2){
+            wins[team1-1] += 1;
+        } else{
+            wins[team2-1] +=1;
+        }
+        matches_played[team1-1] +=1;
+        matches_played[team2-1] +=1;
+    }
+    inputFile.close();
+
+    vector<double> res(teams);
+    for(int i=0; i,teams; i++){
+        res[i]=wins[i]/matches_played[i];
+    }
+    return res;
+}

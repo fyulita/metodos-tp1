@@ -3,6 +3,7 @@
 #include "funciones-principales.h"
 using namespace std;
 
+/*
 int main(int argc, char **argv) {
 
     if(argc != 4){
@@ -31,5 +32,20 @@ int main(int argc, char **argv) {
         res = wp(teams,matches,fileInput);
     }
 
+
+    ofstream Output;
+    Output.open(output);
+    for (int i = 0; i < teams; i++){
+        Output << res[i] << "\n";
+    }
+    Output.close();
+
    return 0;
+}
+*/
+
+int main(int argc, char **argv) {
+    std::cout << "Implementando TP..." << std::endl;
+    testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }

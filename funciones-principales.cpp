@@ -157,3 +157,73 @@ vector<double> wp(int teams, int matches,ifstream& inputFile){
     }
     return res;
 }
+
+
+
+vector<double> elo(int teams, int matches, ifstream& inputFile){
+
+    k=20;
+    vector<double> matches_played(teams,0);
+    vector<double> ratings(teams,1500);        //numero arbitrario de elo rating para arrancar (1500)
+
+    for(int i = 0; i<matches;i++) {
+        int date, team1, score1, team2, score2;
+        inputFile >> date >> team1 >> score1 >> team2 >> score2;
+        Ra = ratings[team1-1];
+        Rb = ratings[team2-1];
+
+        if(score1>score2){
+            eloRating(Ra,Rb,k,1,0); //el team1 se lleva 1 punto el team2 0
+        }else{
+            eloRating(Ra,Rb,k,0,1);
+        }
+        //los ratings ya fueron updateados
+        ratings[team1-1] = Ra;
+        rating[team2-1] = Rb;
+
+    }
+    return ratings;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

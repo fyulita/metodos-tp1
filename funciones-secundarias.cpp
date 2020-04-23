@@ -158,3 +158,44 @@ void appendColumn(matrix &M, const vector<double> c){
         M[i].push_back(c[i]);
     }
 }
+
+
+float eloExpectedScore(int R1, int R2){
+
+    return 1.0 * 1.0 / (1.0 + 1.0 * pow(10, 1.0 * (R2-R1)/400));
+
+}
+
+
+void eloRating(float& Ra, float& Rb, int k, Sa, Sb){
+
+    //Scores esperados para ambos equipos
+    float Ea = eloExpectedScore(Ra,Rb);
+    float Eb = eloExpectedScore(Rb,Ra);
+
+    //update de sus ratings post partido
+    //Sa y Sb son los scores del partido
+    Ra = Ra + (k * (Sa-Ea) );
+    Rb = Rb + (k * (Sb-Eb) );
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

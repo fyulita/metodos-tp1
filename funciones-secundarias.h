@@ -16,5 +16,8 @@ bool hasManySolutions(const matrix &M);
 bool hasSingleSolution(const matrix &M);
 void normalizeMatrix(matrix &M);
 void appendColumn(matrix &M, const vector<double> c);
+float eloExpectedScore(int rating1, int rating2);
+void eloRating(float& Ra, float& Rb, int k, Sa, Sb);
+
 
 #endif //SOLUCION_FUNCIONES_SECUNDARIAS_H

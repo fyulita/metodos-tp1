@@ -1,22 +1,19 @@
-/home/j/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/j/Documents/UBA/metodosNumericos/hub/metodos-tp1
--- The C compiler identification is GNU 7.4.0
--- The CXX compiler identification is GNU 7.4.0
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
+D:\CLion\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Fede\UBA\2020-1C\Metodos Numericos\Material\Laboratorio\tp1"
+-- The C compiler identification is GNU 8.1.0
+-- The CXX compiler identification is GNU 8.1.0
+-- Check for working C compiler: D:/MinGW/mingw32/bin/gcc.exe
+-- Check for working C compiler: D:/MinGW/mingw32/bin/gcc.exe -- works
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Detecting C compile features
 -- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++
--- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Check for working CXX compiler: D:/MinGW/mingw32/bin/g++.exe
+-- Check for working CXX compiler: D:/MinGW/mingw32/bin/g++.exe -- works
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
-CMake Error at CMakeLists.txt:14 (add_subdirectory):
-  add_subdirectory given source "lib/googletest-master" which is not an
-  existing directory.
-
-
--- Configuring incomplete, errors occurred!
-See also "/home/j/Documents/UBA/metodosNumericos/hub/metodos-tp1/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+-- Found PythonInterp: D:/Python38-32/python.exe (found version "3.8.2") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/cmake-build-debug

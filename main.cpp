@@ -1,4 +1,3 @@
-//#include "gtest/gtest.h"
 #include <fstream>
 #include "funciones-principales.cpp"
 
@@ -12,9 +11,9 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    int method = atoi(argv[1]);
-    char* input = argv[2];
-    char* output = argv[3];
+    char* input = argv[1];
+    char* output = argv[2];
+    int method = atoi(argv[3]);
 
 
     ifstream fileInput;
@@ -24,11 +23,11 @@ int main(int argc, char **argv) {
     int matches;
 
     fileInput>>teams>>matches;
-    vector<double> res;
+    vector<double> res(teams,0);
 
 
     if(method==0){
-        cmm(teams,matches,fileInput);
+        res = cmm(teams,matches,fileInput);
     }else if(method==1){
         res = wp(teams,matches,fileInput);
     }else{
@@ -46,10 +45,3 @@ int main(int argc, char **argv) {
    return 0;
 }
 
-/*
-int main(int argc, char **argv) {
-    std::cout << "Implementando TP..." << std::endl;
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
-*/

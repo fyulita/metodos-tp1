@@ -4,9 +4,7 @@
 #include "definiciones.h"
 
 
-bool equalWithError(const double &a, const double &b, const double &e);
-bool equalVectors(const vector<double> &v, const vector<double> &w, const double &e);
-bool equalMatrices(const vector<vector<double>> &A, const vector<vector<double>> &B, const double &e);
+void triangular_matrix(matrix& A, vector<double>& b);
 vector<double> gauss(matrix& A, vector<double>& b);
 
 #endif //SOLUCION_FUNCIONES_SECUNDARIAS_H

@@ -8,3 +8,8 @@
 
 
 #### Obs.: No olvidar de extraer lib/googltest-master.zip
+
+Compilar: g++ main.cpp -o ejec
+Ejecutar: ./ejec [matodo] [entrada] [salida]
+
+

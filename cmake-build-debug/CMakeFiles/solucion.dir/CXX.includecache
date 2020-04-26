@@ -300,21 +300,17 @@ D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/definiciones.h
 vector
 -
 
-D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/func-tests/gaussTest.cpp
-gtest/gtest.h
-D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/func-tests/gtest/gtest.h
-../funciones-principales.h
-D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/funciones-principales.h
-../funciones-secundarias.h
-D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/funciones-secundarias.h
-
 D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/funciones-principales.h
 definiciones.h
 D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/definiciones.h
 fstream
 -
 
-D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/funciones-secundarias.h
-definiciones.h
-D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/definiciones.h
+D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/main.cpp
+gtest/gtest.h
+D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/gtest/gtest.h
+fstream
+-
+funciones-principales.h
+D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/funciones-principales.h
 

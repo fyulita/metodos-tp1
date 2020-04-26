@@ -7,6 +7,6 @@
 bool equalWithError(const double &a, const double &b, const double &e);
 bool equalVectors(const vector<double> &v, const vector<double> &w, const double &e);
 bool equalMatrices(const vector<vector<double>> &A, const vector<vector<double>> &B, const double &e);
-
+vector<double> gauss(matrix& A, vector<double>& b);
 
 #endif //SOLUCION_FUNCIONES_SECUNDARIAS_H

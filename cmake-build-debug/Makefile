@@ -236,21 +236,6 @@ func-tests/funciones-secundariasTest.s:
 .PHONY : func-tests/funciones-secundariasTest.s
 
 # target to build an object file
-func-tests/gaussTest.obj:
-	$(MAKE) -f CMakeFiles\solucion.dir\build.make CMakeFiles/solucion.dir/func-tests/gaussTest.obj
-.PHONY : func-tests/gaussTest.obj
-
-# target to preprocess a source file
-func-tests/gaussTest.i:
-	$(MAKE) -f CMakeFiles\solucion.dir\build.make CMakeFiles/solucion.dir/func-tests/gaussTest.i
-.PHONY : func-tests/gaussTest.i
-
-# target to generate assembly for a file
-func-tests/gaussTest.s:
-	$(MAKE) -f CMakeFiles\solucion.dir\build.make CMakeFiles/solucion.dir/func-tests/gaussTest.s
-.PHONY : func-tests/gaussTest.s
-
-# target to build an object file
 funciones-principales.obj:
 	$(MAKE) -f CMakeFiles\solucion.dir\build.make CMakeFiles/solucion.dir/funciones-principales.obj
 .PHONY : funciones-principales.obj
@@ -315,9 +300,6 @@ help:
 	@echo ... func-tests/funciones-secundariasTest.obj
 	@echo ... func-tests/funciones-secundariasTest.i
 	@echo ... func-tests/funciones-secundariasTest.s
-	@echo ... func-tests/gaussTest.obj
-	@echo ... func-tests/gaussTest.i
-	@echo ... func-tests/gaussTest.s
 	@echo ... funciones-principales.obj
 	@echo ... funciones-principales.i
 	@echo ... funciones-principales.s

@@ -98,24 +98,10 @@ CMakeFiles/solucion.dir/funciones-secundarias.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solucion.dir/funciones-secundarias.s"
 	D:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Fede\UBA\2020-1C\Metodos Numericos\Material\Laboratorio\tp1\funciones-secundarias.cpp" -o CMakeFiles\solucion.dir\funciones-secundarias.s
 
-CMakeFiles/solucion.dir/func-tests/gaussTest.obj: CMakeFiles/solucion.dir/flags.make
-CMakeFiles/solucion.dir/func-tests/gaussTest.obj: CMakeFiles/solucion.dir/includes_CXX.rsp
-CMakeFiles/solucion.dir/func-tests/gaussTest.obj: ../func-tests/gaussTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Fede\UBA\2020-1C\Metodos Numericos\Material\Laboratorio\tp1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/solucion.dir/func-tests/gaussTest.obj"
-	D:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solucion.dir\func-tests\gaussTest.obj -c "D:\Fede\UBA\2020-1C\Metodos Numericos\Material\Laboratorio\tp1\func-tests\gaussTest.cpp"
-
-CMakeFiles/solucion.dir/func-tests/gaussTest.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solucion.dir/func-tests/gaussTest.i"
-	D:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Fede\UBA\2020-1C\Metodos Numericos\Material\Laboratorio\tp1\func-tests\gaussTest.cpp" > CMakeFiles\solucion.dir\func-tests\gaussTest.i
-
-CMakeFiles/solucion.dir/func-tests/gaussTest.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solucion.dir/func-tests/gaussTest.s"
-	D:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Fede\UBA\2020-1C\Metodos Numericos\Material\Laboratorio\tp1\func-tests\gaussTest.cpp" -o CMakeFiles\solucion.dir\func-tests\gaussTest.s
-
 CMakeFiles/solucion.dir/func-tests/funciones-secundariasTest.obj: CMakeFiles/solucion.dir/flags.make
 CMakeFiles/solucion.dir/func-tests/funciones-secundariasTest.obj: CMakeFiles/solucion.dir/includes_CXX.rsp
 CMakeFiles/solucion.dir/func-tests/funciones-secundariasTest.obj: ../func-tests/funciones-secundariasTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Fede\UBA\2020-1C\Metodos Numericos\Material\Laboratorio\tp1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/solucion.dir/func-tests/funciones-secundariasTest.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Fede\UBA\2020-1C\Metodos Numericos\Material\Laboratorio\tp1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/solucion.dir/func-tests/funciones-secundariasTest.obj"
 	D:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solucion.dir\func-tests\funciones-secundariasTest.obj -c "D:\Fede\UBA\2020-1C\Metodos Numericos\Material\Laboratorio\tp1\func-tests\funciones-secundariasTest.cpp"
 
 CMakeFiles/solucion.dir/func-tests/funciones-secundariasTest.i: cmake_force
@@ -131,7 +117,6 @@ solucion_OBJECTS = \
 "CMakeFiles/solucion.dir/main.obj" \
 "CMakeFiles/solucion.dir/funciones-principales.obj" \
 "CMakeFiles/solucion.dir/funciones-secundarias.obj" \
-"CMakeFiles/solucion.dir/func-tests/gaussTest.obj" \
 "CMakeFiles/solucion.dir/func-tests/funciones-secundariasTest.obj"
 
 # External object files for target solucion
@@ -140,7 +125,6 @@ solucion_EXTERNAL_OBJECTS =
 ../solucion.exe: CMakeFiles/solucion.dir/main.obj
 ../solucion.exe: CMakeFiles/solucion.dir/funciones-principales.obj
 ../solucion.exe: CMakeFiles/solucion.dir/funciones-secundarias.obj
-../solucion.exe: CMakeFiles/solucion.dir/func-tests/gaussTest.obj
 ../solucion.exe: CMakeFiles/solucion.dir/func-tests/funciones-secundariasTest.obj
 ../solucion.exe: CMakeFiles/solucion.dir/build.make
 ../solucion.exe: lib/libgtestd.a
@@ -149,7 +133,7 @@ solucion_EXTERNAL_OBJECTS =
 ../solucion.exe: CMakeFiles/solucion.dir/linklibs.rsp
 ../solucion.exe: CMakeFiles/solucion.dir/objects1.rsp
 ../solucion.exe: CMakeFiles/solucion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Fede\UBA\2020-1C\Metodos Numericos\Material\Laboratorio\tp1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ..\solucion.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Fede\UBA\2020-1C\Metodos Numericos\Material\Laboratorio\tp1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ..\solucion.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\solucion.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

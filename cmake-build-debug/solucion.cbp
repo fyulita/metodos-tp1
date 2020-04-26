@@ -322,9 +322,6 @@
 		<Unit filename="D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/func-tests/funciones-secundariasTest.cpp">
 			<Option target="solucion"/>
 		</Unit>
-		<Unit filename="D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/func-tests/gaussTest.cpp">
-			<Option target="solucion"/>
-		</Unit>
 		<Unit filename="D:/Fede/UBA/2020-1C/Metodos Numericos/Material/Laboratorio/tp1/funciones-principales.cpp">
 			<Option target="solucion"/>
 		</Unit>

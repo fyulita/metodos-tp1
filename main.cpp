@@ -1,9 +1,10 @@
 #include "gtest/gtest.h"
 #include <fstream>
 #include "funciones-principales.h"
+
 using namespace std;
 
-/*
+
 int main(int argc, char **argv) {
 
     if(argc != 4){
@@ -42,10 +43,11 @@ int main(int argc, char **argv) {
 
    return 0;
 }
-*/
 
+/*
 int main(int argc, char **argv) {
     std::cout << "Implementando TP..." << std::endl;
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
+*/

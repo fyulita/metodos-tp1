@@ -22,7 +22,6 @@ set(SOURCE_FILES main.cpp
         funciones-principales.cpp
         funciones-secundarias.cpp
         definiciones.h
-        func-tests/gaussTest.cpp
         func-tests/funciones-secundariasTest.cpp)
 
 # Dice cuál va a ser el nombre del archivo ejecutable,

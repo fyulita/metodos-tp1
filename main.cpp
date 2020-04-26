@@ -1,6 +1,6 @@
-#include "gtest/gtest.h"
+//#include "gtest/gtest.h"
 #include <fstream>
-#include "funciones-principales.h"
+#include "funciones-principales.cpp"
 
 using namespace std;
 
@@ -31,6 +31,8 @@ int main(int argc, char **argv) {
         cmm(teams,matches,fileInput);
     }else if(method==1){
         res = wp(teams,matches,fileInput);
+    }else{
+        printf("Metodo no valido");
     }
 
 

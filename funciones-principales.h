@@ -4,8 +4,6 @@
 #include "definiciones.h"
 #include <fstream>
 
-using namespace std;
-
 
 vector<double> cmm (int teams,int matches,ifstream& inputFile);
 vector<double> wp(int teams, int matches,ifstream& inputFile);

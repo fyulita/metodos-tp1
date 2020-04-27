@@ -1,7 +1,5 @@
 #include "definiciones.h"
 
-using namespace std;
-
 
 /* Pre: Matriz cuadrada */
 void triangular_matrix(matrix& A, vector<double>& b){

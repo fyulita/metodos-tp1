@@ -8,5 +8,5 @@
 
 ## Instrucciones
 
-- Compilar: g++ main.cpp -o ejec
-- Ejecutar: ./ejec [entrada] [salida] [método]
+- Compilar: `g++ -o tp01 *.cpp`
+- Ejecutar: `./tp01 [entrada] [salida] [método]`

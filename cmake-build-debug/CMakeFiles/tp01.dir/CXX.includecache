@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/definiciones.h
+vector
+-
+
+/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/funciones-principales.h
+definiciones.h
+/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/definiciones.h
+fstream
+-
+
+/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/main.cpp
+funciones-principales.h
+/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/funciones-principales.h
+

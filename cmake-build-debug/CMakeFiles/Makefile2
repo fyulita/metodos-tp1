@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = "/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/L
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/ejec.dir/all
+all: CMakeFiles/tp01.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/ejec.dir/clean
+clean: CMakeFiles/tp01.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ejec.dir
+# Target rules for target CMakeFiles/tp01.dir
 
 # All Build rule for target.
-CMakeFiles/ejec.dir/all:
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/depend
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4 "Built target ejec"
-.PHONY : CMakeFiles/ejec.dir/all
+CMakeFiles/tp01.dir/all:
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/depend
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4 "Built target tp01"
+.PHONY : CMakeFiles/tp01.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ejec.dir/rule: cmake_check_build_system
+CMakeFiles/tp01.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/cmake-build-debug/CMakeFiles" 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ejec.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tp01.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/ejec.dir/rule
+.PHONY : CMakeFiles/tp01.dir/rule
 
 # Convenience name for target.
-ejec: CMakeFiles/ejec.dir/rule
+tp01: CMakeFiles/tp01.dir/rule
 
-.PHONY : ejec
+.PHONY : tp01
 
 # clean rule for target.
-CMakeFiles/ejec.dir/clean:
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/clean
-.PHONY : CMakeFiles/ejec.dir/clean
+CMakeFiles/tp01.dir/clean:
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/clean
+.PHONY : CMakeFiles/tp01.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

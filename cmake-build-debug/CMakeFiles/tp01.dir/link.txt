@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -g   CMakeFiles/tp01.dir/main.o CMakeFiles/tp01.dir/funciones-principales.o CMakeFiles/tp01.dir/funciones-secundarias.o  -o ../tp01 

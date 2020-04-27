@@ -30,7 +30,7 @@ int main(int argc, char **argv) {
     }else if(method==1){
         res = wp(teams,matches,fileInput);
     }else{
-        printf("Metodo no valido");
+        printf("Metodo invalido.\n");
     }
 
 

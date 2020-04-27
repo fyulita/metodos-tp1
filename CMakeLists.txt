@@ -1,8 +1,9 @@
 # Mínima versión de CMake requerida.
 cmake_minimum_required(VERSION 3.6)
+
 # Nombre del proyecto. En general va a ser el mismo que el nombre
 # del directorio en donde está el CMakeLists.txt.
-project(ejec)
+project(tp01)
 
 # Versión de C++ a utilizar. En Algoritmos 1 usamos C++11.
 set(CMAKE_CXX_STANDARD 11)
@@ -20,7 +21,7 @@ set(SOURCE_FILES main.cpp
 # y qué .cpp va a tener. Acá le decimos que se va a llamar solucion,
 # y que va a tener los archivos .cpp
 # que estén en la variable SOURCE_FILES, que seteamos en la línea anterior.
-add_executable(ejec ${SOURCE_FILES})
+add_executable(tp01 ${SOURCE_FILES})
 
 # Agrega más opciones a la compilación.
 # -g: Hace que podamos debuggear el programa.

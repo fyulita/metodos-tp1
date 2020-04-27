@@ -111,61 +111,61 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ejec
+# Target rules for targets named tp01
 
 # Build rule for target.
-ejec: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ejec
-.PHONY : ejec
+tp01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tp01
+.PHONY : tp01
 
 # fast build rule for target.
-ejec/fast:
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/build
-.PHONY : ejec/fast
+tp01/fast:
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/build
+.PHONY : tp01/fast
 
 # target to build an object file
 funciones-principales.o:
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/funciones-principales.o
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/funciones-principales.o
 .PHONY : funciones-principales.o
 
 # target to preprocess a source file
 funciones-principales.i:
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/funciones-principales.i
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/funciones-principales.i
 .PHONY : funciones-principales.i
 
 # target to generate assembly for a file
 funciones-principales.s:
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/funciones-principales.s
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/funciones-principales.s
 .PHONY : funciones-principales.s
 
 # target to build an object file
 funciones-secundarias.o:
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/funciones-secundarias.o
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/funciones-secundarias.o
 .PHONY : funciones-secundarias.o
 
 # target to preprocess a source file
 funciones-secundarias.i:
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/funciones-secundarias.i
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/funciones-secundarias.i
 .PHONY : funciones-secundarias.i
 
 # target to generate assembly for a file
 funciones-secundarias.s:
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/funciones-secundarias.s
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/funciones-secundarias.s
 .PHONY : funciones-secundarias.s
 
 # target to build an object file
 main.o:
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/main.o
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/main.o
 .PHONY : main.o
 
 # target to preprocess a source file
 main.i:
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/main.i
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/main.i
 .PHONY : main.i
 
 # target to generate assembly for a file
 main.s:
-	$(MAKE) -f CMakeFiles/ejec.dir/build.make CMakeFiles/ejec.dir/main.s
+	$(MAKE) -f CMakeFiles/tp01.dir/build.make CMakeFiles/tp01.dir/main.s
 .PHONY : main.s
 
 # Help Target
@@ -176,7 +176,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... ejec"
+	@echo "... tp01"
 	@echo "... funciones-principales.o"
 	@echo "... funciones-principales.i"
 	@echo "... funciones-principales.s"

@@ -1,7 +1,5 @@
-#include <fstream>
 #include "funciones-secundarias.h"
-
-using namespace std;
+#include <fstream>
 
 
 vector<double> cmm (int teams, int matches, ifstream& inputFile) {

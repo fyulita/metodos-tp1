@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/funciones-principales.cpp" "/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/cmake-build-debug/CMakeFiles/tp01.dir/funciones-principales.o"
-  "/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/funciones-secundarias.cpp" "/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/cmake-build-debug/CMakeFiles/tp01.dir/funciones-secundarias.o"
-  "/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/main.cpp" "/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp01/cmake-build-debug/CMakeFiles/tp01.dir/main.o"
+  "/home/j/Documents/UBA/metodosNumericos/hub/metodos-tp1/funciones-principales.cpp" "/home/j/Documents/UBA/metodosNumericos/hub/metodos-tp1/cmake-build-debug/CMakeFiles/tp01.dir/funciones-principales.o"
+  "/home/j/Documents/UBA/metodosNumericos/hub/metodos-tp1/funciones-secundarias.cpp" "/home/j/Documents/UBA/metodosNumericos/hub/metodos-tp1/cmake-build-debug/CMakeFiles/tp01.dir/funciones-secundarias.o"
+  "/home/j/Documents/UBA/metodosNumericos/hub/metodos-tp1/main.cpp" "/home/j/Documents/UBA/metodosNumericos/hub/metodos-tp1/cmake-build-debug/CMakeFiles/tp01.dir/main.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

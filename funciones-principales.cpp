@@ -62,7 +62,7 @@ vector<double> wp(int teams, int matches,ifstream& inputFile){
     inputFile.close();
 
     vector<double> res(teams);
-    for(int i=0; i,teams; i++){
+    for(int i=0; i<teams; i++){
         res[i]=wins[i]/matches_played[i];
     }
     return res;

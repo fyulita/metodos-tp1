@@ -1,1 +1,0 @@
-/usr/bin/c++  -g -g   CMakeFiles/solucion.dir/main.o CMakeFiles/solucion.dir/funciones-principales.o CMakeFiles/solucion.dir/funciones-secundarias.o  -o ../solucion 

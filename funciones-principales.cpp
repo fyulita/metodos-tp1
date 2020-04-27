@@ -1,6 +1,5 @@
 #include <fstream>
-#include "definiciones.h"
-#include "funciones-principales.h"
+#include "funciones-secundarias.h"
 
 using namespace std;
 

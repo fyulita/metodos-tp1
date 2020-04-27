@@ -3,7 +3,6 @@
 
 #include "definiciones.h"
 #include <fstream>
-#include "funciones-secundarias.cpp"
 
 using namespace std;
 

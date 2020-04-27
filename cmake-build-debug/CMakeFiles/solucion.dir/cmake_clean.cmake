@@ -1,12 +1,9 @@
 file(REMOVE_RECURSE
-  "../libsolucion.dll.a"
-  "../solucion.exe"
-  "../solucion.exe.manifest"
+  "../solucion"
   "../solucion.pdb"
-  "CMakeFiles/solucion.dir/func-tests/funciones-secundariasTest.obj"
-  "CMakeFiles/solucion.dir/funciones-principales.obj"
-  "CMakeFiles/solucion.dir/funciones-secundarias.obj"
-  "CMakeFiles/solucion.dir/main.obj"
+  "CMakeFiles/solucion.dir/funciones-principales.o"
+  "CMakeFiles/solucion.dir/funciones-secundarias.o"
+  "CMakeFiles/solucion.dir/main.o"
 )
 
 # Per-language clean rules from dependency scanning.

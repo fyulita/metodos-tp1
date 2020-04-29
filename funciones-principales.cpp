@@ -1,4 +1,4 @@
-#include "funciones-secundarias.h"
+#include "funciones-secundarias.cpp"
 #include <fstream>
 
 

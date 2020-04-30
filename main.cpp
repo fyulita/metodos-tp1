@@ -1,4 +1,4 @@
-#include "funciones-principales.cpp"
+#include "funciones-principales.h"
 
 using namespace std;
 
@@ -18,8 +18,8 @@ int main(int argc, char **argv) {
     ifstream fileInput;
     fileInput.open(input);
 
-    double teams;
-    double matches;
+    int teams;
+    int matches;
 
     fileInput>>teams>>matches;
     vector<double> res(teams,0);

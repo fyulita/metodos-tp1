@@ -6,7 +6,7 @@
 
 
 vector<double> cmm (int teams,int matches,ifstream& inputFile);
-vector<double> cmmatp (double teams, double matches, ifstream& inputFile);
+vector<double> cmmatp (int teams, int matches, ifstream& inputFile);
 vector<double> wp(int teams, int matches,ifstream& inputFile);
 
 #endif 

@@ -1,4 +1,4 @@
-#include "funciones-secundarias.cpp"
+#include "funciones-secundarias.h"
 #include <fstream>
 #include <map>
 using namespace std;
@@ -49,7 +49,7 @@ vector<double> cmm (int teams, int matches, ifstream& inputFile) {
 
 
 
-vector<double> cmmatp (double teams, double matches, ifstream& inputFile) {
+vector<double> cmmatp (int teams, int matches, ifstream& inputFile) {
 
     matrix C;
     for (double i = 0; i < teams; i++) {
@@ -106,7 +106,7 @@ vector<double> cmmatp (double teams, double matches, ifstream& inputFile) {
 }
 
 
-vector<double> wp(double teams, double matches,ifstream& inputFile){
+vector<double> wp(int teams, int matches,ifstream& inputFile){
     vector<double> matches_played(teams,0);
     vector<double> wins(teams,0);
 

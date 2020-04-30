@@ -1,7 +1,7 @@
 import csv
 
 input_path = '../../data/nba_2016_scores.csv'
-output_path = '../../data/nba_2016_scores.dat'
+output_path = '../../data/nba_2016_scores.in'
 
 with open(input_path,'r') as csvfile,open(output_path,'w') as outfile:
 	score_reader = csv.reader(csvfile,delimiter=',',skipinitialspace=True)

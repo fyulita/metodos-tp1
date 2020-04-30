@@ -2,7 +2,7 @@ import csv
 
 
 input_path = '../../data/atp_matches_2015.csv'
-output_path = '../../data/atp_matches_2015.dat'
+output_path = '../../data/atp_matches_2015.in'
 
 with open(input_path,'r') as csvfile,open(output_path,'w') as outfile:
 	score_reader = csv.reader(csvfile,delimiter=',',skipinitialspace=True)

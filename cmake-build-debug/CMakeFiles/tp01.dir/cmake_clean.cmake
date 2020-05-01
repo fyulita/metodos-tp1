@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "../tp01"
-  "../tp01.pdb"
+  "CMakeFiles/tp01.dir/main.o"
   "CMakeFiles/tp01.dir/funciones-principales.o"
   "CMakeFiles/tp01.dir/funciones-secundarias.o"
-  "CMakeFiles/tp01.dir/main.o"
+  "../tp01.pdb"
+  "../tp01"
 )
 
 # Per-language clean rules from dependency scanning.

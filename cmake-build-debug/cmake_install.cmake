@@ -1,4 +1,4 @@
-# Install script for directory: /home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp1
+# Install script for directory: /home/j/UBA/metodosNumericos/hub/metodos-tp1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/fyulita/Documents/Fede/UBA/2020-1C/Metodos Numericos/Laboratorio/tp1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/j/UBA/metodosNumericos/hub/metodos-tp1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

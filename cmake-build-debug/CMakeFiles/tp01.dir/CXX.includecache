@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/j/UBA/metodosNumericos/hub/metodos-tp1/definiciones.h
+vector
+-
+
+/home/j/UBA/metodosNumericos/hub/metodos-tp1/funciones-principales.cpp
+funciones-secundarias.h
+/home/j/UBA/metodosNumericos/hub/metodos-tp1/funciones-secundarias.h
+fstream
+-
+map
+-
+
+/home/j/UBA/metodosNumericos/hub/metodos-tp1/funciones-principales.h
+definiciones.h
+/home/j/UBA/metodosNumericos/hub/metodos-tp1/definiciones.h
+fstream
+-
+
+/home/j/UBA/metodosNumericos/hub/metodos-tp1/funciones-secundarias.cpp
+definiciones.h
+/home/j/UBA/metodosNumericos/hub/metodos-tp1/definiciones.h
+
+/home/j/UBA/metodosNumericos/hub/metodos-tp1/funciones-secundarias.h
+definiciones.h
+/home/j/UBA/metodosNumericos/hub/metodos-tp1/definiciones.h
+
+/home/j/UBA/metodosNumericos/hub/metodos-tp1/main.cpp
+funciones-principales.h
+/home/j/UBA/metodosNumericos/hub/metodos-tp1/funciones-principales.h
+

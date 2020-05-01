@@ -106,7 +106,35 @@ vector<double> cmmatp (int teams, int matches, ifstream& inputFile) {
 }
 
 
+
+
 vector<double> wp(int teams, int matches,ifstream& inputFile){
+    vector<double> matches_played(teams,0);
+    vector<double> wins(teams,0);
+
+    for(int i = 0; i<matches;i++){
+        int date,team1,score,team2,score2;
+        inputFile>>date>>team1>>score>>team2>>score2;
+        if(score>score2){
+            wins[team1-1] += 1;
+        } else{
+            wins[team2-1] +=1;
+        }
+        matches_played[team1-1] +=1;
+        matches_played[team2-1] +=1;
+    }
+    inputFile.close();
+
+    vector<double> res(teams,0);
+    for(int i=0; i<teams; i++){
+        res[i]=wins[i]/matches_played[i];
+    }
+    return res;
+}
+
+
+
+vector<double> wpatp(int teams, int matches,ifstream& inputFile){
     vector<double> matches_played(teams,0);
     vector<double> wins(teams,0);
 
@@ -143,4 +171,5 @@ vector<double> wp(int teams, int matches,ifstream& inputFile){
     }
     return res;
 }
+
 

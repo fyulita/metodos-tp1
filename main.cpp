@@ -29,8 +29,6 @@ int main(int argc, char **argv) {
         res = cmm(teams,matches,fileInput);
     }else if(method==1){
         res = wp(teams,matches,fileInput);
-    }else if(method==2){
-        res = cmmatp(teams,matches,fileInput);
     }else{
         printf("Metodo invalido.\n");
     } 

@@ -1,6 +1,5 @@
 #include "funciones-secundarias.h"
 #include <fstream>
-#include <map>
 using namespace std;
 
 

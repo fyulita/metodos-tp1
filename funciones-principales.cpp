@@ -1,4 +1,4 @@
-#include "funciones-secundarias.cpp"
+#include "funciones-secundarias.h"
 #include <fstream>
 using namespace std;
 
@@ -76,8 +76,8 @@ vector<double> wp(int teams, int matches,ifstream& inputFile){
 }
 
 
-//Usamos league para devolver como seria la puntuacion de la premier league sin en caso de empate,
-//se diera por victoria al equipo visitante.
+//Usamos league para devolver la puntuacion oficial de la premier league con la excepcion de que,
+// en caso de empate, se diera por victoria al equipo visitante.
 vector<double> league(int teams, int matches,ifstream& inputFile){
     vector<double> matches_played(teams,0);
     vector<double> wins(teams,0);

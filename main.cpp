@@ -1,4 +1,4 @@
-#include "funciones-principales.cpp"
+#include "funciones-principales.h"
 
 using namespace std;
 
